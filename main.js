@@ -346,6 +346,7 @@ function seedDemoData() {
   localStorage.setItem("studyPod_messages", JSON.stringify(messages));
 }
 
+// Checks if localStorage already has data. If not, calls seedDemoData().
 function ensureSeed() {
   const hasAny = STORAGE_KEYS.some((k) => {
     const v = localStorage.getItem(k);
