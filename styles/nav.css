@@ -1,0 +1,92 @@
+/* nav.css — left navigation */
+.left-nav-header {
+  padding: var(--space-md);
+  border-bottom: 1px solid var(--border);
+  display:flex;
+  flex-direction:column;
+  gap: var(--space-sm);
+}
+.left-nav-top {
+  display:flex; align-items:center; justify-content:space-between;
+}
+.left-nav-title { font-weight:600; font-size:14px; }
+.left-nav-summary {
+  background: var(--bg-muted);
+  border-radius: var(--radius-sm);
+  padding: 8px 10px;
+  font-size: 11px;
+  color: var(--text-secondary);
+  display:flex; gap: 8px; flex-wrap:wrap;
+  line-height:1.4;
+}
+.left-nav-summary strong { color: var(--text-primary); font-weight:600; }
+.left-nav-summary .dot { width:6px; height:6px; border-radius:50%; display:inline-block; margin-right:4px; }
+.left-nav-summary .dot.pending { background: var(--pending); }
+.left-nav-summary .dot.accepted { background: var(--accepted); }
+.left-nav-summary .dot.rejected { background: var(--rejected); }
+
+.conversation-list {
+  flex:1;
+  overflow-y:auto;
+  padding: var(--space-sm);
+  display:flex;
+  flex-direction:column;
+  gap: 4px;
+}
+.conv-item {
+  display:flex; align-items:center; gap:10px;
+  padding:10px;
+  border-radius: var(--radius-sm);
+  cursor:pointer;
+  border:1px solid transparent;
+  position:relative;
+  transition: background 0.15s;
+}
+.conv-item:hover { background: var(--bg-hover); }
+.conv-item.active { background: var(--primary-light); border-color:#e0e7ff; }
+.conv-item img { width:40px; height:40px; border-radius:50%; object-fit:cover; flex-shrink:0; }
+.conv-meta { flex:1; min-width:0; display:flex; flex-direction:column; gap:2px; }
+.conv-name { font-size:13px; font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.conv-preview { font-size:12px; color: var(--text-secondary); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.conv-right { display:flex; flex-direction:column; align-items:flex-end; gap:4px; flex-shrink:0; }
+.conv-time { font-size:10px; color: var(--text-tertiary); }
+.badge {
+  background: var(--primary);
+  color:white;
+  font-size:10px;
+  font-weight:700;
+  min-width:18px; height:18px;
+  border-radius: var(--radius-full);
+  display:flex; align-items:center; justify-content:center;
+  padding: 0 5px;
+}
+.offer-status {
+  font-size:10px; padding:2px 6px; border-radius: var(--radius-full); font-weight:600;
+  text-transform:capitalize;
+}
+.offer-status.pending { background: var(--warning-bg); color: var(--warning); }
+.offer-status.accepted { background: var(--success-bg); color: var(--success); }
+.offer-status.rejected { background: var(--danger-bg); color: var(--danger); }
+.offer-dot { width:8px; height:8px; border-radius:50%; }
+.offer-dot.pending { background: var(--pending); }
+.offer-dot.accepted { background: var(--accepted); }
+.offer-dot.rejected { background: var(--rejected); }
+
+.conv-delete {
+  opacity:0;
+  border:none; background:transparent; color: var(--text-tertiary);
+  cursor:pointer; padding:4px; border-radius:4px;
+}
+.conv-item:hover .conv-delete { opacity:1; }
+.conv-delete:hover { background: var(--danger-bg); color: var(--danger); }
+
+.left-nav.collapsed .conv-meta, .left-nav.collapsed .conv-right .conv-time,
+.left-nav.collapsed .left-nav-title, .left-nav.collapsed .left-nav-summary,
+.left-nav.collapsed .offer-status { display:none; }
+.left-nav.collapsed .conv-item { justify-content:center; padding:10px 4px; }
+.left-nav.collapsed .left-nav-header { align-items:center; }
+.left-nav.collapsed .badge {
+  position:absolute; top:4px; right:4px; min-width:16px; height:16px; font-size:9px;
+}
+
+.empty-nav { padding: 24px; text-align:center; color: var(--text-secondary); font-size:13px; }
