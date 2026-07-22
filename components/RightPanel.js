@@ -8,7 +8,7 @@ export function createRightPanel({ store, profileService }) {
 
   function readStats() {
     try {
-      return JSON.parse(localStorage.getItem("estudy_stats") || "[]");
+      return JSON.parse(localStorage.getItem("studyPod_stats") || "[]");
     } catch {
       return [];
     }

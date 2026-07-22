@@ -1,5 +1,5 @@
 // ProfileService — read-only profiles
-const KEY = "estudy_profiles";
+const KEY = "studyPod_profiles";
 
 function read() {
   try {

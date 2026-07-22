@@ -59,7 +59,7 @@ Other mock users exist to populate the left navigation.
 1. **Components** — render only, read from store, emit events, never touch localStorage directly.
 2. **State store** — `subscribe`, `publish`, in-memory state (`activeConversationId`, collapsed flags, etc.).
 3. **Services** — adapter layer over localStorage with Promise-returning API shape (easy backend swap).
-4. **Data source** — `localStorage` keys: `estudy_profiles`, `estudy_stats`, `estudy_conversations`, `estudy_messages`, `estudy_offers`.
+4. **Data source** — `localStorage` keys: `studyPod_profiles`, `studyPod_stats`, `studyPod_conversations`, `studyPod_messages`, `studyPod_offers`.
 5. **Cross-tab sync** — `window.addEventListener('storage')` in store.js re-publishes `conversations:changed`, `messages:changed`, `offers:changed` so the other tab re-renders without manual refresh.
 
 ### Backend-swap seam
@@ -102,4 +102,4 @@ See main task description — `Profile`, `Stats`, `Conversation`, `Offer` (with 
 
 ## Reset demo data
 
-- Button "Reset demo data" in header (also `window.estudyReset()` in console) clears and re-seeds localStorage.
+- Button "Reset demo data" in header (also `window.studyPodReset()` in console) clears and re-seeds localStorage.

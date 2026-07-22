@@ -14,11 +14,11 @@ export const DEMO_TUTOR_ID = "tutor-1";
 export const DEMO_STUDENT_ID = "student-1";
 
 const STORAGE_KEYS = [
-  "estudy_profiles",
-  "estudy_stats",
-  "estudy_conversations",
-  "estudy_messages",
-  "estudy_offers",
+  "studyPod_profiles",
+  "studyPod_stats",
+  "studyPod_conversations",
+  "studyPod_messages",
+  "studyPod_offers",
 ];
 
 function seedDemoData() {
@@ -339,11 +339,11 @@ function seedDemoData() {
     },
   ];
 
-  localStorage.setItem("estudy_profiles", JSON.stringify(profiles));
-  localStorage.setItem("estudy_stats", JSON.stringify(stats));
-  localStorage.setItem("estudy_conversations", JSON.stringify(conversations));
-  localStorage.setItem("estudy_offers", JSON.stringify(offers));
-  localStorage.setItem("estudy_messages", JSON.stringify(messages));
+  localStorage.setItem("studyPod_profiles", JSON.stringify(profiles));
+  localStorage.setItem("studyPod_stats", JSON.stringify(stats));
+  localStorage.setItem("studyPod_conversations", JSON.stringify(conversations));
+  localStorage.setItem("studyPod_offers", JSON.stringify(offers));
+  localStorage.setItem("studyPod_messages", JSON.stringify(messages));
 }
 
 function ensureSeed() {
@@ -514,7 +514,7 @@ export async function initApp(role) {
   updateGridCollapse();
 
   // Expose reset for console
-  window.estudyReset = () => {
+  window.studyPodReset = () => {
     seedDemoData();
     location.reload();
   };

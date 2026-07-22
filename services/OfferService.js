@@ -1,6 +1,6 @@
-const OFFERS_KEY = "estudy_offers";
-const MSG_KEY = "estudy_messages";
-const CONV_KEY = "estudy_conversations";
+const OFFERS_KEY = "studyPod_offers";
+const MSG_KEY = "studyPod_messages";
+const CONV_KEY = "studyPod_conversations";
 
 function readOffers() {
   try {

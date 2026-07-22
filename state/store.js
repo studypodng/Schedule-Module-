@@ -44,25 +44,25 @@ export function createStore(initial = {}) {
   if (typeof window !== "undefined") {
     window.addEventListener("storage", (e) => {
       if (!e.key) return;
-      if (!e.key.startsWith("estudy_")) return;
+      if (!e.key.startsWith("studyPod_")) return;
       // re-read fresh data is done in services; here we just broadcast
       switch (e.key) {
-        case "estudy_conversations":
+        case "studyPod_conversations":
           publish("conversations:external", null);
           publish("conversations:changed", null);
           break;
-        case "estudy_messages":
+        case "studyPod_messages":
           publish("messages:external", null);
           publish("messages:changed", null);
           break;
-        case "estudy_offers":
+        case "studyPod_offers":
           publish("offers:external", null);
           publish("offers:changed", null);
           break;
-        case "estudy_profiles":
+        case "studyPod_profiles":
           publish("profiles:changed", null);
           break;
-        case "estudy_stats":
+        case "studyPod_stats":
           publish("stats:changed", null);
           break;
       }

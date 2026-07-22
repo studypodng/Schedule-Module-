@@ -200,7 +200,7 @@ export function createOfferForm({ store, offerService }) {
         // we can get conv from store active or via service — for simplicity use active
         // We'll fetch from localStorage quickly
         const convs = JSON.parse(
-          localStorage.getItem("estudy_conversations") || "[]",
+          localStorage.getItem("studyPod_conversations") || "[]",
         );
         const conv = convs.find((c) => c.id === convId);
         if (conv) this.openForEdit(offer, conv);
