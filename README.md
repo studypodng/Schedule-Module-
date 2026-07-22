@@ -1,4 +1,4 @@
-# estudy — Tutor / Student Chat Dashboard
+# studyPod — Tutor / Student Chat Dashboard
 
 A production-quality vanilla JS chat module with custom offers, built for a live ed-tech platform. No frameworks, no build step.
 
