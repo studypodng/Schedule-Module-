@@ -66,13 +66,17 @@ export function createChatWindow({
         });
         bar.appendChild(createBtn);
       }
-      container.appendChild(bar);
     }
 
     const list = document.createElement("div");
     list.className = "messages-container";
     list.setAttribute("aria-live", "polite");
     list.setAttribute("role", "log");
+
+    if (state.currentRole === "tutor") {
+      list.classList.add("has-offer-action");
+      list.appendChild(bar);
+    }
 
     if (messages.length === 0) {
       const empty = document.createElement("div");

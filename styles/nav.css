@@ -1,7 +1,6 @@
 /* nav.css — left navigation */
 .left-nav-header {
   padding: var(--space-md);
-  border-bottom: 1px solid var(--border);
   display: flex;
   flex-direction: column;
   gap: var(--space-sm);
@@ -213,8 +212,39 @@
 }
 
 .left-nav.collapsed .conv-item {
-  justify-content: center;
+  justify-content: flex-start;
+  gap: 6px;
   padding: 10px 4px;
+}
+
+.left-nav.collapsed .conversation-list {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.left-nav.collapsed .conv-item img {
+  margin-left: 4px;
+}
+
+.left-nav.collapsed .conv-right {
+  position: absolute;
+  top: 50%;
+  right: 34px;
+  transform: translateY(-50%);
+}
+
+.left-nav.collapsed .conv-delete {
+  position: absolute;
+  top: 50%;
+  right: 2px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
 }
 
 .left-nav.collapsed .left-nav-header {

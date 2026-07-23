@@ -28,7 +28,8 @@ function seedDemoData() {
       id: "tutor-1",
       role: "tutor",
       name: "Dr. Sarah Chen",
-      profilePicUrl: "https://i.pravatar.cc/150?img=32",
+      profilePicUrl:
+        "https://img.magnific.com/free-photo/african-teenage-girl-portrait-happy-smiling-face_53876-146757.jpg?semt=ais_hybrid&w=740&q=80",
       online: true,
       lastOfflineAt: null,
       username: "sarahchen",
@@ -40,7 +41,8 @@ function seedDemoData() {
       id: "student-1",
       role: "student",
       name: "Alex Morgan",
-      profilePicUrl: "https://i.pravatar.cc/150?img=8",
+      profilePicUrl:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsWllbblJ7Z3ObojzZvbof7flBPUzOgMHbU4WMe_b8WA&s=10",
       online: false,
       lastOfflineAt: new Date(Date.now() - 2 * 60 * 60 * 1000).toISOString(),
       username: "alexm",
@@ -52,7 +54,8 @@ function seedDemoData() {
       id: "student-2",
       role: "student",
       name: "Jamie Lee",
-      profilePicUrl: "https://i.pravatar.cc/150?img=5",
+      profilePicUrl:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-qmBaBddw35DALos5HbOHRfbDaDuAgSCMoJkQhxtlYg&s=10",
       online: true,
       lastOfflineAt: null,
       username: "jamielee",
@@ -64,7 +67,8 @@ function seedDemoData() {
       id: "student-3",
       role: "student",
       name: "Priya Patel",
-      profilePicUrl: "https://i.pravatar.cc/150?img=23",
+      profilePicUrl:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnKGwkXNlf3yzllejNKuuUbz2DghAm6dCRYVducr15NQ&s=10",
       online: false,
       lastOfflineAt: new Date(Date.now() - 5 * 60 * 60 * 1000).toISOString(),
       username: "priyap",
@@ -76,7 +80,8 @@ function seedDemoData() {
       id: "tutor-2",
       role: "tutor",
       name: "Prof. David Kim",
-      profilePicUrl: "https://i.pravatar.cc/150?img=12",
+      profilePicUrl:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1NVmWKUvkyqvFcpP9H_74IUdJcJpz6lhPGfMMQ0ieFw&s=10",
       online: true,
       lastOfflineAt: null,
       username: "davidkim",
@@ -88,7 +93,8 @@ function seedDemoData() {
       id: "tutor-3",
       role: "tutor",
       name: "Emma Wilson",
-      profilePicUrl: "https://i.pravatar.cc/150?img=26",
+      profilePicUrl:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGVIUQ1jMLZllv2ACEgLewiIUMRxKusdneFbrksYp9s9lOr5kLbLMH1BI&s=10",
       online: false,
       lastOfflineAt: new Date(Date.now() - 30 * 60 * 1000).toISOString(),
       username: "emmaw",
