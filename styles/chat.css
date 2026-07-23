@@ -2,7 +2,7 @@
 .messages-container {
   flex: 1;
   overflow-y: auto;
-  padding: var(--space-lg);
+  padding: 0 var(--space-lg) var(--space-lg);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -195,7 +195,7 @@
   top: 0;
   z-index: 2;
   align-self: stretch;
-  margin: calc(-1 * var(--space-lg)) calc(-1 * var(--space-lg)) 0;
+  margin: 0 calc(-1 * var(--space-lg));
   padding: 10px var(--space-md);
   border-bottom: 1px solid rgba(230, 232, 236, 0.7);
   background: rgba(255, 255, 255, 0.55);
@@ -342,7 +342,12 @@
 
 @media (max-width: 767px) {
   .messages-container {
-    padding: var(--space-md);
+    padding: 0 var(--space-md) var(--space-md);
+  }
+
+  .offer-action-bar {
+    margin-left: calc(-1 * var(--space-md));
+    margin-right: calc(-1 * var(--space-md));
   }
 
   .message-row {
