@@ -194,10 +194,12 @@
   border-bottom: 1px solid var(--border);
   background: var(--bg-elevated);
   display: flex;
+  align-items: center;
   gap: 10px;
 }
 
 .offer-action-bar button {
+  flex: 0 0 auto;
   padding: 8px 14px;
   border-radius: 8px;
   border: 1px solid var(--border);
@@ -205,6 +207,13 @@
   cursor: pointer;
   font-size: 13px;
   font-weight: 600;
+  white-space: nowrap;
+}
+
+.offer-action-bar span {
+  flex: 1 1 auto;
+  min-width: 0;
+  line-height: 1.35;
 }
 
 .offer-action-bar .primary {
@@ -215,6 +224,17 @@
 
 .offer-action-bar .primary:hover {
   background: var(--primary-hover);
+}
+
+@media (max-width: 480px) {
+  .offer-action-bar {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .offer-action-bar span {
+    flex-basis: 100%;
+  }
 }
 
 /* right panel */

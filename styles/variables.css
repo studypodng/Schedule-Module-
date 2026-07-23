@@ -8,8 +8,8 @@
   --text-primary: #111827;
   --text-secondary: #667085;
   --text-tertiary: #98a2b3;
-  --primary: #4f46e5;
-  --primary-hover: #4338ca;
+  --primary: rgb(0, 138, 230);
+  --primary-hover: rgb(4, 155, 255);
   --primary-light: #eef2ff;
   --success: #16a34a;
   --success-bg: #ecfdf3;
